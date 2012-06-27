@@ -1,0 +1,733 @@
+INF 1.0
+ITEMS 200
+ITEM: SECTOR    NAME: APOTHECARYDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -42.750 278.875
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 85 HOLD
+                STOP: 0 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: APOTHECARYDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -55.250 278.875
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: -85 HOLD
+                STOP: 0 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: APOTHECARYDOOR03
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -48.125 223.500
+                EVENT_MASK: 32
+                OBJECT: 101 196608 AUTO 
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 801
+		    OBJECT_EXCLUDE: 101 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: BANKDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 35.875 136.750
+                EVENT_MASK: 32
+                OBJECT: 101 196608 AUTO
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 801
+                OBJECT_EXCLUDE: 101 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: BANKDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 35.875 149.250
+                EVENT_MASK: 32
+                OBJECT: 101 196608 AUTO
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 801
+		    OBJECT_EXCLUDE: 101 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: BANKDOOR03
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -14.375 123.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: BARBERSHOPDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 32.875 206.250
+                EVENT_MASK: 32
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: BARBERSHOPDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 270
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 5 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: BASEMENTDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 270
+                EVENT_MASK: 32
+	          OBJECT: 111 65536
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+                SPEED: 17
+                STOP: 0 HOLD
+                STOP: 11 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 805
+                OBJECT_EXCLUDE: 111
+        SEQEND
+ITEM: SECTOR    NAME: BLACKSMITHDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -110.125 230.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: BLACKSMITHDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -117.500 245.875
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: COFFIN1
+        SEQ
+                CLASS: ELEVATOR MOVE_FLOOR
+                EVENT_MASK: 0
+                SLAVE: COFFIN2
+                SLAVE: COFFIN3
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 BRIDGE.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 3.5 HOLD
+                STOP: -4 TERMINATE
+        SEQEND
+ITEM: SECTOR    NAME: COURTHOUSEDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 255.250 268.875
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: COURTHOUSEDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 242.750 268.875
+                EVENT_MASK: 32
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: COURTHOUSEDOOR03
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 258.125 221.250
+                EVENT_MASK: 32
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: DIG_ME
+        SEQ
+                CLASS: ELEVATOR MOVE_FLOOR
+                EVENT_MASK: 16
+                OBJECT: 110 65536
+		    SOUND: 1 SHOVEL.WAV
+                SPEED: 60
+                STOP: 0.00 HOLD
+		    STOP: -0.25 HOLD
+		    STOP: -0.50 HOLD
+		    STOP: -0.75 HOLD
+                STOP: -1.00 HOLD
+                STOP: -1.25 HOLD
+                STOP: -1.50 HOLD
+                STOP: -1.75 HOLD
+                STOP: -2.00 HOLD
+                STOP: -2.25 HOLD
+                STOP: -2.50 HOLD
+                STOP: -2.75 HOLD
+                STOP: -3.00 HOLD
+                STOP: -3.25 HOLD
+                STOP: -3.50 HOLD
+                STOP: -3.75 HOLD
+                STOP: -4.00 HOLD
+                STOP: -4.25 HOLD
+                STOP: -4.50 HOLD
+                STOP: -4.75 HOLD
+                STOP: -5.00 HOLD
+                STOP: -5.25 HOLD
+                STOP: -5.50 HOLD
+                STOP: -5.75 HOLD
+                STOP: -6.00 TERMINATE
+        SEQEND
+ITEM: SECTOR    NAME: DOCTORSOFFICEDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 89.125 422.250
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: DOCTORSOFFICEDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 111.875 395.000
+                EVENT_MASK: 32
+                OBJECT: 101 196608 AUTO
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 801
+		    OBJECT_EXCLUDE: 101 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: DRTHORAXDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 3.125 464.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: DRTHORAXDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 15.125 464.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: GENERALSTOREDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 89.125 194.500
+                EVENT_MASK: 32
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: GENERALSTOREDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 89.125 182.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: GUESTBOOK
+        SEQ
+                CLASS: TRIGGER STANDARD
+                OBJECT: 109 65536
+                CLIENT: COFFIN1
+                EVENT_MASK: 48
+                CLASS: TRIGGER STANDARD
+		    OBJECT: 109 65536
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 806
+	  SEQEND		    
+ITEM: SECTOR    NAME: HOTELDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 85.9775 268.1475
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 94.8525 277.0225
+                EVENT_MASK: 32
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR03
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 18.000 309.125
+                EVENT_MASK: 32
+                OBJECT: 100 196608 AUTO
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 802
+		    OBJECT_EXCLUDE: 100 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR04
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 38.000 309.125
+                EVENT_MASK: 32
+                OBJECT: 100 196608 AUTO
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 802
+		    OBJECT_EXCLUDE: 100 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR05
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 69.500 309.125
+                EVENT_MASK: 32
+                OBJECT: 100 196608 AUTO
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 802
+		    OBJECT_EXCLUDE: 100 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR06
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 76.500 294.875
+                EVENT_MASK: 32
+                OBJECT: 100 196608 AUTO
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 802
+		    OBJECT_EXCLUDE: 100 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: HOTELDOOR07
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 45.000 294.875
+                EVENT_MASK: 32
+                OBJECT: 100 196608 AUTO
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 802
+		    OBJECT_EXCLUDE: 100 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: IRONDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                OBJECT: 101 196608 AUTO
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 6 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 801
+		    OBJECT_EXCLUDE: 101 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: JAILFRONTDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 271.000 327.125
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: JAILDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 270
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 CLANK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 5.875 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+                OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: JAILDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 CLANK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 6.875 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+		    OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: JAILDOOR03
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 CLANK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 6.875 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+		    OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: JAILDOOR04
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 CLANK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 6.875 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+		    OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: JAILDOOR05
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 90
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 CLANK.WAV
+                SOUND: 2 TRAINDR2.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 5.875 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+		    OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: MEATMARKETDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -35.500 325.125
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: -85 HOLD
+                STOP: 0 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: POSTOFFICEDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 34.875 116.500
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: POSTOFFICEDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -14.875 118.250
+                EVENT_MASK: 32
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: SCROLL
+	  SEQ
+		    CLASS: ELEVATOR SCROLL_WALL
+		    ANGLE: 0
+		    SPEED: 60
+		    CLASS: ELEVATOR CHANGE_LIGHT
+		    EVENT_MASK: 0
+		    STOP: 0 HOLD
+		    STOP: 14 HOLD
+	  SEQEND			
+ITEM: SECTOR    NAME: SAFEDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -14.375 162.500
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+		    SOUND: 2 DOOR1.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: SHERIFFSDOOR
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 216.250 329.125
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 85 HOLD
+                STOP: 0 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: SHOVE_ME
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 270
+                EVENT_MASK: 32
+                SOUND: 1 SCRAPE.WAV
+                SPEED: 12
+                STOP: 0 HOLD
+                STOP: 4 TERMINATE
+                CLASS: ELEVATOR SCROLL_FLOOR
+                ANGLE: 270
+                EVENT_MASK: 32
+                SPEED: 12
+                STOP: 0 HOLD
+                STOP: 4 TERMINATE
+        SEQEND
+ITEM: SECTOR    NAME: STABLEDOOR1
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                STOP: 0 HOLD
+                STOP: 7 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: STABLEDOOR2
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 180
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                STOP: 0 HOLD
+                STOP: 7 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: STABLEDOOR3
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 0
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                STOP: 0 HOLD
+                STOP: 7 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: STABLEDOOR4
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 0
+                EVENT_MASK: 32
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+		    SOUND: 3 HVYSTOP.WAV
+                STOP: 0 HOLD
+                STOP: 7 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: STANSDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -107.0225 333.1475
+                EVENT_MASK: 32
+                SOUND: 1 DOOR3.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: STANSDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: -98.1475 342.0225
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: -85 HOLD
+                STOP: 0 HOLD
+       SEQEND
+ITEM: SECTOR    NAME: TELEGRAPHDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 95.125 155.000
+                EVENT_MASK: 32
+                SOUND: 1 DOOR5.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: TELEGRAPHDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_MOVE2
+                ANGLE: 270
+                EVENT_MASK: 32
+                OBJECT: 102 196608 AUTO
+                SOUND: 1 UNLOCK.WAV
+                SOUND: 2 SCRAPE.WAV
+                SPEED: 8
+                STOP: 0 HOLD
+                STOP: 5 HOLD
+                CLASS: TRIGGER STANDARD
+                CLIENT: SYSTEM
+                MESSAGE: USER_MSG 800
+		    OBJECT_EXCLUDE: 102 AUTO
+        SEQEND
+ITEM: SECTOR    NAME: WICKEDPIGDOOR01
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 85.125 118.250
+                EVENT_MASK: 32
+                SOUND: 1 DOOR2.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: 85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: WICKEDPIGDOOR02
+        SEQ
+                CLASS: ELEVATOR MORPH_SPIN2
+                CENTER: 85.125 105.750
+                EVENT_MASK: 32
+                SOUND: 1 DOOR4.WAV
+                SPEED: 60
+                STOP: 0 HOLD
+                STOP: -85 HOLD
+        SEQEND
+ITEM: SECTOR    NAME: PIANO_KEYS
+	SEQ
+		    CLASS: TRIGGER STANDARD
+		    CLIENT: LEFT_PIANO_DOOR
+		    EVENT_MASK: 48
+	SEQEND
+ITEM: SECTOR    NAME: MUSIC_BOX
+	SEQ
+		    CLASS: ELEVATOR MOVE_FLOOR
+		    EVENT_MASK: 0
+		    SPEED: .25
+		    SOUND: 2 PIANO.WAV
+		    STOP: 5.5 HOLD
+		    STOP: 4.5 0
+			MESSAGE: 1 LEFT_PIANO_DOOR NEXT_STOP
+		      MESSAGE: 1 RIGHT_PIANO_DOOR NEXT_STOP
+		    STOP: 4.5 HOLD
+		    STOP: 5.5 0
+			MESSAGE: 3 LEFT_PIANO_DOOR NEXT_STOP
+		      MESSAGE: 3 RIGHT_PIANO_DOOR NEXT_STOP
+	SEQEND
+ITEM: SECTOR    NAME: LEFT_PIANO_DOOR
+	SEQ
+		    CLASS: ELEVATOR MORPH_MOVE2
+		    ANGLE: 0
+		    EVENT_MASK: 0
+		    SPEED: 7
+		    SOUND: 1 SCRAPE.WAV
+		    STOP: 0 HOLD
+		    STOP: 0 0
+		      MESSAGE: 1 PIANO_KEYS MASTER_OFF
+			MESSAGE: 1 RIGHT_PIANO_DOOR
+		    STOP: 1.25 HOLD
+	SEQEND
+ITEM: SECTOR    NAME: RIGHT_PIANO_DOOR
+	SEQ
+		    CLASS: ELEVATOR MORPH_MOVE2
+		    ANGLE: 180
+		    EVENT_MASK: 0
+		    SPEED: 7
+		    SOUND: 1 SCRAPE.WAV
+		    STOP: 0 HOLD
+		    STOP: 0 0
+		    	MESSAGE: 1 SCROLL
+		    STOP: 1.25 0
+		      MESSAGE: 2 MUSIC_BOX
+		    STOP: 1.25 HOLD
+		    STOP: 1.25 0
+			MESSAGE: 4 SCROLL
+		    STOP: 0 0
+		      MESSAGE: 5 PIANO_KEYS MASTER_ON
+	SEQEND

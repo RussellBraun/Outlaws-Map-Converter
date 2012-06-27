@@ -1,0 +1,14 @@
+ITEM 1.0
+
+NAME town
+FUNC NULL
+ANIM NULL
+PRELOAD: town.trk
+DATA 7
+        STR     PC_0         IBRSSKEY          #pickup cheat object # 0
+        STR     PC_1         IPEN
+        STR     PC_2         ISHOVEL
+        STR     PC_3         ICROWBAR
+        STR     PC_4         IIRONKEY
+        STR     PC_5         ISTEEKEY
+	  STR     TAUNT_TYPE   SIMMS
